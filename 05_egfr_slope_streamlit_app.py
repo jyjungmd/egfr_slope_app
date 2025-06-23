@@ -24,7 +24,7 @@ import matplotlib.pyplot as plt
 # from google.colab import files
 
 print("Please upload the 'egfr_slope_model.pkl' file.")
-uploaded = files.upload()
+# uploaded = files.upload()
 
 if 'egfr_slope_model.pkl' in uploaded:
     print("File 'egfr_slope_model.pkl' uploaded successfully.")
