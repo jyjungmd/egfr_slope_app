@@ -33,7 +33,7 @@ print("Please upload the 'egfr_slope_model.pkl' file.")
 
 # 모델 불러오기
 # Ensure 'egfr_slope_model.pkl' is uploaded to your Colab environment
-model = joblib.load("egfr_slope_model.pkl")
+model = joblib.load("05_egfr_slope_model.pkl")
 
 st.title("eGFR Slope 예측 도구 (KNOW-CKD 기반)")
 st.markdown("환자의 기초 정보를 입력하면 연간 eGFR 감소 속도를 예측합니다.")
