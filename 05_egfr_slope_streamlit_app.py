@@ -27,9 +27,9 @@ print("Please upload the 'egfr_slope_model.pkl' file.")
 # uploaded = files.upload()
 
 # if 'egfr_slope_model.pkl' in uploaded:
-    print("File 'egfr_slope_model.pkl' uploaded successfully.")
+#    print("File 'egfr_slope_model.pkl' uploaded successfully.")
 # else:
-    print("Error: 'egfr_slope_model.pkl' not found in uploaded files.")
+#    print("Error: 'egfr_slope_model.pkl' not found in uploaded files.")
 
 # 모델 불러오기
 # Ensure 'egfr_slope_model.pkl' is uploaded to your Colab environment
