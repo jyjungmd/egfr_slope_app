@@ -8,10 +8,10 @@ import matplotlib.pyplot as plt
 
 # 모델 import
 
-# from google.colab import files
+### from google.colab import files
 
 print("Please upload the 'egfr_slope_model.pkl' file.")
-uploaded = files.upload()
+### uploaded = files.upload()
 
 if 'egfr_slope_model.pkl' in uploaded:
     print("File 'egfr_slope_model.pkl' uploaded successfully.")
@@ -65,4 +65,4 @@ if st.button("예측하기"):
     shap.plots.waterfall(shap_values[0], show=False)
     st.pyplot(bbox_inches='tight')
 
-# %pip install streamlit
+### %pip install streamlit
