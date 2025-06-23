@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 
 # 모델 import
 
-from google.colab import files
+# from google.colab import files
 
 print("Please upload the 'egfr_slope_model.pkl' file.")
 uploaded = files.upload()
