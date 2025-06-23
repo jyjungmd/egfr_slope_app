@@ -67,7 +67,7 @@ input_data = pd.DataFrame({
 })
 
 if st.button("예측하기"):
-    # pred = model.predict(input_data)[0]
+    pred = model.predict(input_data)[0]
     st.success(f"예측된 eGFR 연간 감소 속도: {pred:.2f} mL/min/1.73㎡/year")
 
     st.markdown("---")
