@@ -1,4 +1,5 @@
 # Streamlit 웹 예측 도구 (eGFR slope 예측)
+!pip install streamlit
 import streamlit as st
 import joblib
 import numpy as np
@@ -6,21 +7,27 @@ import shap
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Note: If you encounter a ModuleNotFoundError for 'streamlit',
+# ensure you have the correct runtime environment selected or try restarting the runtime
+# after installing streamlit.
+
 # 모델 import
 
-### from google.colab import files
+from google.colab import files
+import joblib
+import streamlit as st
 
-### print("Please upload the 'egfr_slope_model.pkl' file.")
-### uploaded = files.upload()
+print("Please upload the 'LGBM_egfr_slope_model.pkl' file.")
+uploaded = files.upload()
 
-### if 'egfr_slope_model.pkl' in uploaded:
-### print("File 'egfr_slope_model.pkl' uploaded successfully.")
-### else:
-### print("Error: 'egfr_slope_model.pkl' not found in uploaded files.")
+if 'LGBM_egfr_slope_model.pkl' in uploaded:
+    print("File 'LGBM_egfr_slope_model.pkl' uploaded successfully.")
+else:
+    print("Error: 'LGBM_egfr_slope_model.pkl' not found in uploaded files.")
 
 # 모델 불러오기
-# Ensure 'egfr_slope_model.pkl' is uploaded to your Colab environment
-model = joblib.load("egfr_slope_model.pkl")
+# Ensure 'LGBM_egfr_slope_model.pkl' is uploaded to your Colab environment
+model = joblib.load("LGBM_egfr_slope_model.pkl")
 
 st.title("eGFR Slope 예측 도구 (KNOW-CKD 기반)")
 st.markdown("환자의 기초 정보를 입력하면 연간 eGFR 감소 속도를 예측합니다.")
@@ -65,4 +72,4 @@ if st.button("예측하기"):
     shap.plots.waterfall(shap_values[0], show=False)
     st.pyplot(bbox_inches='tight')
 
-### %pip install streamlit
+%pip install streamlit
