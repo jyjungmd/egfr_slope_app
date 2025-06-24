@@ -1,5 +1,5 @@
 # Streamlit 웹 예측 도구 (eGFR slope 예측)
-!pip install streamlit
+### !pip install streamlit
 import streamlit as st
 import joblib
 import numpy as np
