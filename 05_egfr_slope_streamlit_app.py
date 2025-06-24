@@ -72,4 +72,4 @@ if st.button("예측하기"):
     shap.plots.waterfall(shap_values[0], show=False)
     st.pyplot(bbox_inches='tight')
 
-%pip install streamlit
+### %pip install streamlit
