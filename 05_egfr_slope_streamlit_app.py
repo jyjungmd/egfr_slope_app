@@ -13,17 +13,17 @@ import matplotlib.pyplot as plt
 
 # 모델 import
 
-from google.colab import files
+### from google.colab import files
 import joblib
 import streamlit as st
 
-print("Please upload the 'LGBM_egfr_slope_model.pkl' file.")
-uploaded = files.upload()
+### print("Please upload the 'LGBM_egfr_slope_model.pkl' file.")
+### uploaded = files.upload()
 
-if 'LGBM_egfr_slope_model.pkl' in uploaded:
-    print("File 'LGBM_egfr_slope_model.pkl' uploaded successfully.")
-else:
-    print("Error: 'LGBM_egfr_slope_model.pkl' not found in uploaded files.")
+### if 'LGBM_egfr_slope_model.pkl' in uploaded:
+###    print("File 'LGBM_egfr_slope_model.pkl' uploaded successfully.")
+### else:
+###    print("Error: 'LGBM_egfr_slope_model.pkl' not found in uploaded files.")
 
 # 모델 불러오기
 # Ensure 'LGBM_egfr_slope_model.pkl' is uploaded to your Colab environment
